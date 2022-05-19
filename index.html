@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Consumo de API</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Consumindo API</h1>
+    </header>
+    <h2  onclick="getAllUsers()" class="nomes">List all data.name</h2>
+    <input type="text" id="search" placeholder="procurar por nome">
+    <div id="match-list"></div>
+    <section id="paginate">
+        <div class="list">
+            <div id="it"> </div>
+        </div>
+        <div class="controls">
+            
+            <div class="prev"><</div>
+            <div class="numbers">
+                <div onclick="getList()">1</div>
+                <div onclick="getList2()">2</div>
+                <div onclick="getList3()">3</div>
+            </div>
+            <div class="next">></div>
+    </section>
+    <script src="src/services/script.js"></script>
+</body>
+</html>
