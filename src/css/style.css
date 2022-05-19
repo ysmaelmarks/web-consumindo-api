@@ -5,13 +5,6 @@
         --primary: rgba(168, 241, 241, 0.63);
         --white: #f0f0f9;
     }
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
     *, 
     button,
     input {
@@ -19,8 +12,6 @@
     }
 
     body {
-        height: 100vh;
-
         background-color: var(--black);
         color: var(--white);
     }
@@ -79,13 +70,18 @@
         color: var(--primary);
     }
 
-    #search {
-        padding: 1em;
-        width: 200px;
-        margin-left: 43%;
-        margin-right: auto;
-        border-radius: 1em;
-        position: relative;
+    #bloco {
+        width: auto;
+        height: 25px;
+        border-radius: 0.5em;
+        position: sticky;
+        left: 500px;
+        text-align: center;
+    }
+    #search{
+        width: 300px;
+        height: 25px;
+        border-radius: 0.5em;
     }
 
     #search input {
